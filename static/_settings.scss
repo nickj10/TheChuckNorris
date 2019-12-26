@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import '~element-ui/packages/theme-chalk/src/common/var';
+
+// -------Colors-------
+$c-grey-10: hsl(0, 0, 10);
+$c-grey-20: hsl(0, 0, 20);
+$c-grey-25: hsl(0, 0, 24); // #3d3d3d
+$c-grey-30: hsl(0, 0, 30);
+$c-grey-40: hsl(0, 0, 40); // #666
+$c-grey-50: hsl(0, 0, 50);
+$c-grey-60: hsl(0, 0, 60); // #999
+$c-grey-70: hsl(0, 0, 70);
+$c-grey-80: hsl(0, 0, 80); // #ccc
+$c-grey-90: hsl(0, 0, 90);
+$c-grey-95: hsl(0, 0, 95);
+
+// -------Page Size------
+$page-size: 1048px;
+
+// -------Fonts--------
+$ff-base: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$fz-xs: 12px;
+$fz-sm: 14px;
+$fz-med: 16px;
+$fz-l: 18px;
+$fz-xl: 24px;
+$fz-xxl: 28px;
+$fz-xxxl: 32px;
+
+// -------Gutter-------
+$gt-base: 8px;
+$gt-sm: $gt-base * 2; // 16
+$gt-med: $gt-base * 3; // 24
+$gt-l: $gt-sm * 2; // 32
+$gt-xl: $gt-med * 2; // 48
+$gt-xxl: $gt-l * 2; // 64
+
+// --------Mediaqueries-------
+
+$media-xxs: '(min-width: 320px)'; // iPhone Retina
+$media-xs: '(min-width: 425px)'; // Phones
+$media-sm: '(min-width: 768px)'; // Tablets
+$media-md: '(min-width: 992px)'; // Desktop
+$media-lg: '(min-width: 1200px)'; // HD
