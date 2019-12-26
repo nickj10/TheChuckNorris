@@ -9,19 +9,24 @@
 <script>
 export default {
     metaInfo() {
-    return {
-      title: 'Chuck Norris',
-    }
-  },
+        return {
+            title: 'Chuck Norris',
+        }
+    },
 }
 </script>
 
 <style lang="scss" scoped>
-    .home {
-        &__title {
-            display: flex;
-            justify-items: center;
-            align-items: center;
-        }
-    }
+@import "static/settings.scss";
+@import "static/mixins.scss";
+
+.home {
+  &__title {
+    font-size: $fz-xxxl;
+    font-weight: 700;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+}
 </style>
