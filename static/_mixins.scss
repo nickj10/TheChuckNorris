@@ -1,0 +1,37 @@
+// -------Mixins-------
+@mixin media($width) {
+  @if $width==xxs {
+    @media #{$media-xxs} {
+      @content;
+    }
+  }
+
+  @if $width==xs {
+    @media #{$media-xs} {
+      @content;
+    }
+  } @else if $width==sm {
+    @media #{$media-sm} {
+      @content;
+    }
+  } @else if $width==md {
+    @media #{$media-md} {
+      @content;
+    }
+  } @else if $width==lg {
+    @media #{$media-lg} {
+      @content;
+    }
+  }
+}
+
+@mixin wrapper {
+  padding-left: $gt-med;
+  padding-right: $gt-med;
+  max-width: $page-size;
+  margin: 0 auto;
+  @include media(xs) {
+    padding-left: $gt-med;
+    padding-right: $gt-med;
+  }
+}
