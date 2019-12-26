@@ -1,6 +1,5 @@
 <template>
-    <div class="alert-component" :type="type" :icon="icon" :closable="false"
-        :class="[`alert-component__type--${type}`]">
+    <div class="alert-component" :type="type" :icon="icon" :closable="false" :class="[`alert-component__type--${type}`]">
         <div :class="`alert-component__icon alert-component__icon--${type}`">
             <!-- <InfoIcon v-if="type == 'info' && icon" />
         <WarningIcon v-if="type == 'warning' && icon" fill="#ff8a23" />
@@ -22,14 +21,17 @@
 </template>
 
 <style lang="scss">
-    .alert-component {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        color: #4a5557;
-        width: auto;
-        padding: 16px 24px;
-        font-size: 14px;
-        line-height: 1.5em;
-    }
+@import "static/settings.scss";
+@import "static/mixins.scss";
+
+.alert-component {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  color: #4a5557;
+  width: auto;
+  padding: 16px 24px;
+  font-size: 14px;
+  line-height: 1.5em;
+}
 </style>
