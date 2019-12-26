@@ -6,6 +6,9 @@
         <div class="not-found__title">
             404 Not Found
         </div>
+        <div class="not-found__description">
+            The page you were looking for doesn't exist.
+        </div>
     </div>
 </template>
 
@@ -26,13 +29,22 @@ export default {
 .not-found {
   background-color: $c-orange-bg;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
+  font-family: $ff-base;
   &__title {
-    font-family: $ff-base;
+    font-size: $fz-xxxl;
+    font-weight: 700;
+  }
+  &__logo {
+    padding-right: 40px;
+  }
+  &__description {
+    font-size: $fz-xl;
+    font-weight: 300;
   }
 }
 </style>
