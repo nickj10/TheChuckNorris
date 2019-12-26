@@ -18,6 +18,7 @@ export default {
 
 <style lang="scss" scoped>
 @import 'static/settings.scss';
+@import 'static/mixins.scss';
 
 .not-found {
   max-width: 244px;
