@@ -9,21 +9,28 @@
 <script>
 export default {
     metaInfo() {
-    return {
-      title: 'Page Not Found',
-    }
-  },
+        return {
+            title: 'Page Not Found',
+        }
+    },
 }
 </script>
 
 <style lang="scss" scoped>
-    .not-found {
-        &__title {
-            display: flex;
-            justify-items: center;
-            align-items: center;
-        }
-    }
+@import 'static/settings.scss';
+
+.not-found {
+  max-width: 244px;
+  @include media(md) {
+    max-width: 420px;
+  }
+  &__title {
+    font-family: $ff-base;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+}
 </style>
 
 
