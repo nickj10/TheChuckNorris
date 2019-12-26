@@ -9,6 +9,11 @@
         <div class="not-found__description">
             The page you were looking for doesn't exist.
         </div>
+        <div class="not-found__back">
+            <span class="not-found__back--icon">&lt;</span>
+            <a class="not-found__back--text link_normal" href="/">Back to start page</a>
+        </div>
+
     </div>
 </template>
 
@@ -27,7 +32,7 @@ export default {
 @import "static/mixins.scss";
 
 .not-found {
-  background-color: $c-orange-bg;
+  background: $c-orange-bg;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,6 +50,17 @@ export default {
   &__description {
     font-size: $fz-xl;
     font-weight: 300;
+  }
+  &__back {
+      margin-top: $gt-sm;
+      &--icon {
+          color: $c-grey-30;
+      }
+      &--text {
+          &:hover {
+              color: $c-grey-60;
+          }
+      }
   }
 }
 </style>
