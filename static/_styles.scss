@@ -1,0 +1,118 @@
+@import "./settings";
+@import "./mixins";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+table,
+td,
+tr,
+p,
+form,
+fieldset,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: $ff-base;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  background-color: $c-concrete;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  background-color: $c-contrast;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 1500px;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+// --------Spacer-------
+.spacer {
+  &-base {
+    margin-top: $gt-base;
+  }
+
+  &-small {
+    margin-top: $gt-sm;
+  }
+
+  &-medium {
+    margin-top: $gt-med;
+  }
+
+  &-large {
+    margin-top: $gt-l;
+  }
+
+  &-xlarge {
+    margin-top: $gt-xl;
+  }
+}
+
+// -------Container-------
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  @include wrapper;
+
+  @include media(xs) {
+    margin: 0 auto;
+  }
+}
+
+// Strong
+.strong {
+  font-weight: bold;
+}
+
+// Display
+.block {
+  display: block;
+}

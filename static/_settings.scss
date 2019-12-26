@@ -13,11 +13,16 @@ $c-grey-80: hsl(0, 0, 80); // #ccc
 $c-grey-90: hsl(0, 0, 90);
 $c-grey-95: hsl(0, 0, 95);
 
+$c-contrast: #ffffff;
+$c-concrete: #f2f2f2;
+
+$c-orange-bg: #ffac00;
+
 // -------Page Size------
 $page-size: 1048px;
 
 // -------Fonts--------
-$ff-base: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-base: 'Avenir', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 $fz-xs: 12px;
 $fz-sm: 14px;
