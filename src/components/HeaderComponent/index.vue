@@ -30,6 +30,7 @@
   -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.48);
   -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.48);
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.48);
+  z-index: 100;
 
   &__navbar {
     display: flex;
