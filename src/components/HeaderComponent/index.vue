@@ -41,6 +41,10 @@
     &--option {
       font-weight: $fw-xxl;
       padding: 0 20px;
+
+      &:hover {
+        color: $c-orange-2;
+      }
     }
   }
 

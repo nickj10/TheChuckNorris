@@ -32,7 +32,7 @@ export default {
 @import "static/mixins.scss";
 
 .not-found {
-  background: $c-orange-bg;
+  background: $c-orange-1;
   display: flex;
   flex-direction: column;
   justify-content: center;
