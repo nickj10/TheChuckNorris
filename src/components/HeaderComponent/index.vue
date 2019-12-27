@@ -27,22 +27,30 @@
   padding: 0 10px;
   justify-content: space-between;
   align-items: center;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.48);
+  z-index: 100;
 
   &__navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-right: 15px;
+    margin-right: $gt-sm;
 
     &--option {
-      font-weight: 800;
-      padding-right: 10px;
+      font-weight: $fw-xxl;
+      padding: 0 20px;
+
+      &:hover {
+        color: $c-orange-2;
+      }
     }
   }
 
   &__logos {
-    height: 70px;
-    margin-left: 15px;
+    height: 60px;
+    margin-left: $gt-sm;
   }
 }
 </style>
