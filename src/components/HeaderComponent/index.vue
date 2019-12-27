@@ -36,17 +36,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-right: 15px;
+    margin-right: $gt-sm;
 
     &--option {
-      font-weight: 800;
-      padding-right: 10px;
+      font-weight: $fw-xxl;
+      padding: 0 20px;
     }
   }
 
   &__logos {
-    height: 70px;
-    margin-left: 15px;
+    height: 60px;
+    margin-left: $gt-sm;
   }
 }
 </style>
