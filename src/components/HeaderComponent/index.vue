@@ -1,0 +1,49 @@
+<template>
+  <div class="header">
+    <div class="header__logos">
+      <img id="#chuck-logo" src="./chuck-logo.png" alt="Chuck Norris Logo">
+      <a href="/"><img src="./chuck-firma.png" alt="Chuck Norris Signature"></a>
+    </div>
+
+    <nav class="header__navbar">
+      <a class="header__navbar--option" href="/">HOME</a>
+      <a class="header__navbar--option" href="/gallery">GALLERY</a>
+      <a class="header__navbar--option" href="/movies">MOVIES</a>
+      <a class="header__navbar--option" href="/jokes">JOKES</a>
+    </nav>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+@import "static/settings.scss";
+@import "static/mixins.scss";
+
+.header {
+  height: 70px;
+  background-color: lightgray;
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 10px;
+  justify-content: space-between;
+  align-items: center;
+
+  &__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 15px;
+
+    &--option {
+      font-weight: 800;
+      padding-right: 10px;
+    }
+  }
+
+  &__logos {
+    height: 70px;
+    margin-left: 15px;
+  }
+}
+</style>
+

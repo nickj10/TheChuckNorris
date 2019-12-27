@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="wrapper">
-    <!-- ADD HEADER COMPONENT HERE-->
+    <Header />
     <div class="app-container">
       <component v-if="component" :is="component" />
       <router-view v-else />
@@ -11,11 +11,13 @@
 
 <script>
 import Homepage from '@/views/Home'
+import Header from '@/components/HeaderComponent'
 
 export default {
   name: 'app',
   components: {
     Homepage,
+    Header,
   },
   metaInfo() {
     return {

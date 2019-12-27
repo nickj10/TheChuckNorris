@@ -25,7 +25,7 @@ export default {
     font-size: $fz-xxxl;
     font-weight: 700;
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
   }
 }
