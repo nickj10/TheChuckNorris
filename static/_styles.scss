@@ -97,8 +97,6 @@ img {
 }
 
 .container {
-  // width: 100vw;
-  // height: 100vh;
   @include wrapper;
 
   @include media(xs) {

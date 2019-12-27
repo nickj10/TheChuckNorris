@@ -37,7 +37,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: 100vh;
   font-family: $ff-base;
   &__title {
