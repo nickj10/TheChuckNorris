@@ -5,19 +5,21 @@
       <component v-if="component" :is="component" />
       <router-view v-else />
     </div>
-    <!-- ADD FOOTER COMPONENT HERE -->
+    <Footer />
   </div>
 </template>
 
 <script>
 import Homepage from '@/views/Home'
 import Header from '@/components/HeaderComponent'
+import Footer from '@/components/FooterComponent'
 
 export default {
   name: 'app',
   components: {
     Homepage,
     Header,
+    Footer,
   },
   metaInfo() {
     return {

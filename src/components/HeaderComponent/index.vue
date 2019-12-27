@@ -24,7 +24,7 @@
   display: flex;
   overflow: hidden;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 $gt-med;
   justify-content: space-between;
   align-items: center;
   -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.48);
@@ -36,11 +36,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-right: $gt-sm;
 
     &--option {
       font-weight: $fw-xxl;
       padding: 0 20px;
+
+      &:last-child {
+        padding-right: 0;
+      }
 
       &:hover {
         color: $c-orange-2;
@@ -50,7 +53,6 @@
 
   &__logos {
     height: 60px;
-    margin-left: $gt-sm;
   }
 }
 </style>
