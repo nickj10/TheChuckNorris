@@ -1,19 +1,40 @@
 <template>
-    <div class="gallery">
-        <div class="gallery__title">
-            Chuck's Gallery
-        </div>
-        <div class="gallery__photos">
-          <card-component>
-            <template slot="header">
+  <div class="gallery">
+    <div class="gallery__title">
+      Chuck's Gallery
+    </div>
+    <div class="gallery__photos">
+      <card-component>
+        <!-- <template slot="header">
               Sample header
             </template>
             <template slot="content">
               Sample content
+            </template> -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Chuck_Norris_May_2015.jpg" alt="Chuck Norris">
+      </card-component>
+      <card-component>
+        <!-- <template slot="header">
+              Sample header
             </template>
-          </card-component>
-        </div>
+            <template slot="content">
+              Sample content
+            </template> -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Chuck_Norris_May_2015.jpg" alt="Chuck Norris">
+
+      </card-component>
+      <card-component>
+        <!-- <template slot="header">
+              Sample header
+            </template>
+            <template slot="content">
+              Sample content
+            </template> -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Chuck_Norris_May_2015.jpg" alt="Chuck Norris">
+
+      </card-component>
     </div>
+  </div>
 </template>
 <script>
 import CardComponent from '@/components/CardComponent'
@@ -40,7 +61,16 @@ export default {
   }
 
   &__photos {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
     margin: $gt-xl;
+    flex-wrap: wrap;
+
+    @include media(sm) {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
 }
 </style>
