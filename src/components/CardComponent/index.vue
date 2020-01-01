@@ -19,7 +19,7 @@ export default {
 @import "static/mixins.scss";
 
 .card-component {
-  width: 328px;
+  width: 100%;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -37,6 +37,10 @@ export default {
   &__content {
     font-size: $fz-med;
     font-weight: $fw-med;
+  }
+
+  @include media(xs) {
+    width: 328px;
   }
 }
 </style>
