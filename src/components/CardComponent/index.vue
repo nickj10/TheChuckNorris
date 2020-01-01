@@ -6,6 +6,9 @@
         <div class="card-component__content">
             <slot name="content"></slot>
         </div>
+        <div class="card-component__photo">
+            <slot />
+        </div>
     </div>
 </template>
 <script>
@@ -28,6 +31,8 @@ export default {
   background-color: var(--white);
   padding: $gt-med;
   align-items: center;
+  align-content: center;
+  margin: $gt-base;
 
   &__title {
     font-size: $fz-l;
@@ -37,6 +42,12 @@ export default {
   &__content {
     font-size: $fz-med;
     font-weight: $fw-med;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    align-self: center;
   }
 
   @include media(xs) {
