@@ -23,12 +23,12 @@ export default {
 
 .card-component {
   width: 100%;
-  height: 300px;
+  //height: 300px;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  background-color: var(--white);
+  background-color: white;
   padding: $gt-med;
   align-items: center;
   align-content: center;
