@@ -1,19 +1,36 @@
 <template>
-    <div class="card-component">
-        <span class="card-component__title">
-            <slot name="title"></slot>
-        </span>
-        <div class="card-component__content">
-            <slot name="content"></slot>
-        </div>
-        <div class="card-component__photo">
-            <slot />
-        </div>
+  <div class="card-component" :hasImage="hasImage" :title="title" :content="content">
+    <div v-if="title" class="card-component__title">
+      <slot name="title"></slot>
     </div>
+    <div v-if="content" class="card-component__content">
+      <slot name="content"></slot>
+    </div>
+    <div class="card-component__photo">
+      <slot />
+    </div>
+  </div>
 </template>
 <script>
 export default {
-    name: 'card-component',
+  name: 'card-component',
+  props: {
+    title: {
+      type: Boolean,
+      default: true,
+    },
+    content: {
+      type: Boolean,
+      default: true,
+    },
+    image: {
+      type: Boolean,
+      default: false,
+    },
+    props: {
+      type: Object,
+    },
+  },
 }
 </script>
 
@@ -23,12 +40,12 @@ export default {
 
 .card-component {
   width: 100%;
-  height: 300px;
+  //height: 300px;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  background-color: var(--white);
+  background-color: white;
   padding: $gt-med;
   align-items: center;
   align-content: center;
