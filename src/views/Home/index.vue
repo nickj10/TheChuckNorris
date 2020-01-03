@@ -10,7 +10,10 @@
         <div class="home__joke">
             <div class="home__joke--inner">
                 <h2>Joke Time</h2>
-                <span>{{info.data.value}}</span>
+                <card-component>
+                    <span slot="content">{{info.data.value}}</span>
+                </card-component>
+                
             </div>
 
         </div>
@@ -19,8 +22,13 @@
 
 <script>
 import axios from 'axios'
+import CardComponent from '@/components/CardComponent'
 
 export default {
+    name: 'home',
+    components: {
+        CardComponent,
+    },
     data() {
         return {
             info: null
@@ -67,7 +75,9 @@ export default {
     background-color: $c-orange-3;
 
     &--inner {
-        height: 300px;
+      height: 300px;
+      max-width: $page-size;
+      padding: $gt-l 100px;
     }
   }
 }
