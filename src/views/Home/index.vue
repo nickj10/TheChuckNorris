@@ -12,11 +12,32 @@
         <h2 class="title">Joke Time</h2>
         <Button @click="changeJoke" type="success">Generate!</Button>
 
+
         <card-component class="joke" :title="false">
           <span slot="content">{{info.data.value}}</span>
         </card-component>
       </div>
+    </div>
+    <div class="home__chunkukdo home__item">
+      <img src="./chuck.svg" alt="Chuck Norris Icon" height="300px">
+      <card-component width="400px">
+        <span slot="title">Chun Kuk Do</span>
+        <div slot="content">
+          <ol>
+            <li>I will develop myself to the maximum of my potential in all ways.</li>
+            <li>I will forget the mistakes of the past and press on to greater achievements.</li>
+            <li>I will continually work at developing love, happiness and loyalty in my family.</li>
+            <li>I will look for the good in all people and make them feel worthwhile.</li>
+            <li>If I have nothing good to say about a person, I will say nothing.</li>
+            <li>I will always be as enthusiastic about the success of others as I am about my own.</li>
+            <li>I will maintain an attitude of open-mindedness.</li>
+            <li>I will maintain respect for those in authority and demonstrate this respect at all times.</li>
+            <li>I will always remain loyal to my God, my country, family and my friends.</li>
+            <li>I will remain highly goal-oriented throughout my life because that positive attitude helps my family, my country and myself.</li>
+          </ol>
+        </div>
 
+      </card-component>
     </div>
   </div>
 </template>
@@ -88,7 +109,7 @@ export default {
       display: flex;
       flex-direction: column;
       height: 500px;
-      padding: $gt-xxl 100px;
+      padding: $gt-xl 100px;
       align-items: center;
 
       & .title {
@@ -98,6 +119,18 @@ export default {
       & > card-component {
         padding-top: $gt-med;
       }
+    }
+  }
+
+  &__chunkukdo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media(md) {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
     }
   }
 

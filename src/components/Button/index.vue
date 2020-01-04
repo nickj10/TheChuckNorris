@@ -33,6 +33,10 @@ export default {
   color: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  cursor: pointer;
+  -webkit-appearance: none;
+  font-size: $fz-med;
 
   &[disabled] {
     cursor: not-allowed;
@@ -43,7 +47,13 @@ export default {
   }
 
   &:focus {
-    outline: none;
+    outline: 0;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+    box-shadow: 0;
   }
 
   &__type {
