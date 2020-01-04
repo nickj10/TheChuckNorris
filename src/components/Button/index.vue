@@ -1,26 +1,26 @@
 <template>
-    <button class="btn" :disabled="disabled" :class="[`btn__type--${type}`]" @click="handleClick">
-        <slot />
-    </button>
+  <button class="btn" :disabled="disabled" :class="[`btn__type--${type}`]" @click="handleClick">
+    <slot />
+  </button>
 </template>
 <script>
 export default {
-    name: 'gm5-button',
-    props: {
-        disabled: {
-            type: Boolean,
-            default: false,
-        },
-        type: {
-            type: String,
-            default: 'normal',
-        },
+  name: 'gm5-button',
+  props: {
+    disabled: {
+      type: Boolean,
+      default: false,
     },
-    methods: {
-        handleClick(evt) {
-            this.$emit('click', evt)
-        },
+    type: {
+      type: String,
+      default: 'normal',
     },
+  },
+  methods: {
+    handleClick(evt) {
+      this.$emit('click', evt)
+    },
+  },
 }
 </script>
 <style lang="scss" scoped>
