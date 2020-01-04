@@ -88,8 +88,7 @@ export default {
       display: flex;
       flex-direction: column;
       height: 500px;
-      max-width: $page-size;
-      padding: $gt-l 100px;
+      padding: $gt-xxl 100px;
       align-items: center;
 
       & .title {
@@ -103,7 +102,7 @@ export default {
   }
 
   &__item {
-    margin: $gt-med 0;
+    padding: $gt-l;
   }
 }
 </style>

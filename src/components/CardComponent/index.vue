@@ -49,7 +49,7 @@ export default {
   padding: $gt-med;
   align-items: center;
   align-content: center;
-  margin: $gt-base;
+  margin: $gt-l;
 
   &__title {
     font-size: $fz-l;
