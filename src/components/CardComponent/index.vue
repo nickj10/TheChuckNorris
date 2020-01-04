@@ -1,12 +1,16 @@
 <template>
-  <div class="card-component" :hasImage="hasImage" :title="title" :content="content">
+  <div class="card-component" 
+    :hasImage="hasImage" 
+    :title="title" 
+    :content="content"
+    >
     <div v-if="title" class="card-component__title">
       <slot name="title"></slot>
     </div>
     <div v-if="content" class="card-component__content">
       <slot name="content"></slot>
     </div>
-    <div class="card-component__photo">
+    <div v-if="hasImage" class="card-component__photo">
       <slot />
     </div>
   </div>
@@ -23,7 +27,7 @@ export default {
       type: Boolean,
       default: true,
     },
-    image: {
+    hasImage: {
       type: Boolean,
       default: false,
     },
@@ -49,7 +53,7 @@ export default {
   padding: $gt-med;
   align-items: center;
   align-content: center;
-  margin: $gt-l;
+  margin: $gt-med;
 
   &__title {
     font-size: $fz-l;
