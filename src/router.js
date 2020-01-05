@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/Home'
 import Gallery from '@/views/Gallery'
-import Jokes from '@/views/Jokes'
 import NotFound from '@/views/NotFound'
+import Jokes from '@/views/Jokes'
 
 Vue.use(Router)
 
