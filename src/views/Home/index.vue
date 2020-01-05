@@ -12,6 +12,7 @@
         <h2 class="title">Joke Time</h2>
         <Button @click="changeJoke" type="success">Generate!</Button>
 
+
         <card-component class="joke" :title="false">
           <span slot="content">{{info.data.value}}</span>
         </card-component>

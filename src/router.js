@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/views/Home'
 import Gallery from '@/views/Gallery'
 import NotFound from '@/views/NotFound'
+import Jokes from '@/views/Jokes'
 
 Vue.use(Router)
 
@@ -18,6 +19,11 @@ export default new Router({
             path: '/gallery',
             name: 'gallery',
             component: Gallery,
+        },
+        {
+            path: '/jokes',
+            name: 'jokes',
+            component: Jokes,
         },
         { path: '*', component: NotFound },
     ],
