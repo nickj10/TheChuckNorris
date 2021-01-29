@@ -3,5 +3,5 @@
     "config:base"
   ],
   "schedule": ["after 1pm and before 5pm on friday"],
-  "enable": false
+  "enabled": false
 }
