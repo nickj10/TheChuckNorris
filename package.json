@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@vue/cli": "4.5.11",
-    "axios": "0.19.2",
+    "axios": "0.21.1",
     "core-js": "3.8.3",
     "sass": "1.32.5",
     "vue": "2.6.12",
